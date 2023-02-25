@@ -1,8 +1,9 @@
 def write_file(file_name, file_content):
-    pass
+    file = open(f"{file_name}.txt", mode='w')
+    file.write(file_content)
 
 def append_file(file_name, append_content):
-    pass
+    open(f"{file_name}.txt", mode='a').write(append_content)
 
 def read_file(file_name):
-    pass
+    return open(f"{file_name}.txt").read()
